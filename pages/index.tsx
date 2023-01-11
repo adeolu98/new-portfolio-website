@@ -35,7 +35,7 @@ export default function Home() {
           }}
           initial={{ scale: 0.8 }}
           animate={{ scale: 1.3 }}
-          className="w-96 h-96 absolute lg:relative lg:w-[900px] lg:h-[900px] p-5 lg:p-20 rounded-full border border-slate-300"
+          className="w-72 h-72 absolute lg:relative lg:w-[900px] lg:h-[900px] p-5 lg:p-20 rounded-full border border-slate-300"
         >
           <div className="w-full h-full p-5 lg:p-20 rounded-full border border-slate-300">
             <div className="w-full h-full p-5 lg:p-20 rounded-full border border-slate-300">
