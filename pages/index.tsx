@@ -470,7 +470,7 @@ export default function Home() {
           </Carousel>
         </div>
       </div>
-      <div className="h-screen w-full px-8 lg:px-32 flex flex-col justify-center">
+      <div className="w-full px-8 lg:px-32 flex flex-col justify-center">
         <p className="text-4xl text-center  font-bold">Skills</p>
         <div className="mt-20 grid gap-4 grid-cols-3  md:grid-cols-6">
           <div className="flex flex-col pt-6 py-8 px-8 items-center opacity-70 rounded-2xl hover:shadow-xl  hover:opacity-100 hover:bg-slate-200 border">
@@ -712,7 +712,7 @@ export default function Home() {
           </Carousel.Slide>
         </Carousel>
       </div>
-      <div className="bg-slate-200 h-screen p-8 py-8 lg:p-0 w-full flex gap-10 lg:gap-44 flex-col lg:flex-row items-center justify-center">
+      <div className="bg-slate-200 h-screen  p-8 py-8 lg:p-0 w-full flex gap-10 lg:gap-44 flex-col lg:flex-row items-center justify-center">
         <img
           className=" h-96 lg:h-[600px] border-black rounded-xl"
           src={"/deolu-2.jpg"}
