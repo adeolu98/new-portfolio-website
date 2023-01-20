@@ -12,7 +12,7 @@ export default function Home() {
         <ContactLinks />
         <Intro className="h-screen"></Intro>
       </div>
-      <div className="h-screen w-full px-8 lg:px-32 flex flex-col items-center">
+      <div className="lg:h-screen w-full px-8 lg:px-32 flex flex-col items-center">
         <p className="absolute text-4xl md:mt-6 text-center font-bold">
           Work Experience
         </p>
