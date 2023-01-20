@@ -23,7 +23,7 @@ export default function Home() {
         <Skills className="mt-20"></Skills>
       </div>
 
-      <div className="w-full gap-36 lg:gap-10 h-screen flex w-full flex-col pt-20 justify-center px-8 lg:px-32 lg:py-32">
+      <div className="w-full gap-24 lg:gap-10 flex w-full flex-col py-20 justify-center px-8 lg:px-32 lg:py-32">
         <p className="text-center text-4xl font-bold">Projects</p>
         <Projects className="w-full h-full"></Projects>
       </div>

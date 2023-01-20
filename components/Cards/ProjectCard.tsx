@@ -4,17 +4,19 @@ export interface ProjectCardProps {
   imageSrc: string;
   className?: string;
   children?: ReactNode;
+  disableHover?: boolean;
 }
 
 export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
   className = "",
   imageSrc,
   children,
+  disableHover = false,
 }) => {
   const [showProjectInfo, setShowProjectInfo] = useState("invisible");
 
   const handleDisplayProjectInfo = (action: string) => {
-    action === "show"
+    !disableHover && action === "show" 
       ? setShowProjectInfo("visible")
       : setShowProjectInfo("invisible");
   };
@@ -27,7 +29,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
     >
       <img
         src={imageSrc}
-        className=" w-full h-full rounded-3xl hover:opacity-30"
+        className={`w-full h-full rounded-3xl ${ !disableHover && 'hover:opacity-30'}`}
         alt={"project"}
       ></img>
       <div

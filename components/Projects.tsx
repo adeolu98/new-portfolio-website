@@ -72,7 +72,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           classNames={classes}
         >
           <Carousel.Slide>
-            <div className="mt-16 flex flex-col w-full md:flex-row gap-8">
+            <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
               <ProjectCard imageSrc="/project1.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
@@ -92,7 +92,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="mt-16 flex flex-col w-full md:flex-row gap-8">
+            <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
               <ProjectCard imageSrc="/project1.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
@@ -112,7 +112,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="mt-16 flex flex-col w-full md:flex-row gap-8">
+            <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
               <ProjectCard imageSrc="/project1.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
@@ -151,24 +151,22 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           classNames={classes}
         >
           <Carousel.Slide>
-            <ProjectCard imageSrc="/project1.jpg">
-              <>
-                <p className="text-sm xl:text-lg">Project Title</p>
-                <p className="text-xs xl:text-base">
-                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-              </>
-            </ProjectCard>
+            <ProjectCard imageSrc="/project1.jpg" disableHover = {true}></ProjectCard>
+            <div className="text-center mt-6">
+              <p className="text-lg">Project Title</p>
+              <p className="text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <ProjectCard imageSrc="/project1.jpg">
-              <>
-                <p className="text-sm xl:text-lg">Project Title</p>
-                <p className="text-xs xl:text-base">
-                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-              </>
-            </ProjectCard>
+            <ProjectCard imageSrc="/project1.jpg" disableHover = {true}></ProjectCard>
+            <div className="text-center mt-6">
+              <p className="text-lg">Project Title</p>
+              <p className="text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
           </Carousel.Slide>
         </Carousel>
       </div>
