@@ -1,10 +1,4 @@
 import React, { FunctionComponent } from "react";
-import { SkillCard } from "./Cards/SkillCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-
 
 export interface AboutProps {
   className?: string;

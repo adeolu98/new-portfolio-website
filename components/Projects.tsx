@@ -1,17 +1,9 @@
 import React, { FunctionComponent } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { Carousel } from "@mantine/carousel";
 import { createStyles } from "@mantine/core";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { ContactLinks } from "../components/ContactLinks";
-import { Intro } from "../components/Intro";
-import { ExperienceCard } from "../components/Cards/ExperienceCard";
-import { SkillCard } from "../components/Cards/SkillCard";
-import { Skills } from "../components/Skills";
 import { ProjectCard } from "../components/Cards/ProjectCard";
 
 const useStyles = createStyles((_theme, _params, getRef) => ({
