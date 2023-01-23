@@ -286,7 +286,6 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
           }}
           mx="auto"
           withIndicators
-          withControls
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
