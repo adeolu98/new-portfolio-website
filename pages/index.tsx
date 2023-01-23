@@ -5,7 +5,7 @@ import { Projects } from "../components/Projects";
 import { Experience } from "../components/Experience";
 import { About } from "../components/About";
 import { Nav } from "../components/Nav";
-import { Button } from "@mantine/core";
+import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
   return (
@@ -42,10 +42,13 @@ export default function Home() {
       <div id="about">
         <About></About>
       </div>
-
       <div className="py-3">
         <p className="text-center"> copyright &copy; 2022 ADEOLUADEWOLE</p>
       </div>
+      <ScrollToTop
+        style={{ backgroundColor: "transparent" }}
+        className="flex justify-center items-center animate-bounce"
+      ></ScrollToTop>
     </div>
   );
 }
