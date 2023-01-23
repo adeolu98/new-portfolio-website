@@ -144,6 +144,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           }}
           mx="auto"
           withIndicators
+          withControls = {false}
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
