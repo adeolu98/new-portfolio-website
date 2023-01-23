@@ -293,7 +293,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
           classNames={classes}
         >
           <Carousel.Slide>
-            <div className="w-full p-10">
+            <div className="w-full py-10">
               <ExperienceCard>
                 <p className="lg:text-4xl font-bold"> Job Position</p>
                 <p className=" mt-2 lg:text-2xl font-bold">Company Name</p>
