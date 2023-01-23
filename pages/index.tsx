@@ -46,8 +46,8 @@ export default function Home() {
         <p className="text-center"> copyright &copy; 2022 ADEOLUADEWOLE</p>
       </div>
       <ScrollToTop
-        style={{ backgroundColor: "transparent" }}
-        className="flex justify-center items-center animate-bounce"
+        style={{ backgroundColor: "transparent"}} //has to be defined to override the default
+        className="animate-bounce flex justify-center items-center"
       ></ScrollToTop>
     </div>
   );
