@@ -138,7 +138,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
                     IPFS, react.js, HTML and CSS.
                   </li>
                   <li className="pt-2">
-                    Development of smart contracts on L2's and other Ethereum
+                    Development of smart contracts on L2`&apos;`s and other Ethereum
                     compatible blockchains to minimize gas costs for users.
                   </li>
                 </ul>
@@ -265,7 +265,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
                     IPFS, react.js, HTML and CSS.
                   </li>
                   <li className="pt-2">
-                    Development of smart contracts on L2's and other Ethereum
+                    Development of smart contracts on L2`&apos;`s and other Ethereum
                     compatible blockchains to minimize gas costs for users.
                   </li>
                 </ul>
