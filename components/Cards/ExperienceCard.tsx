@@ -17,7 +17,7 @@ export const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
 }) => {
   return (
     <div
-      className={`${className} border rounded-3xl flex flex-col hover:shadow-lg hover:bg-slate-200 justify-left px-10 py-12 ${cardOpacity}`}
+      className={`${className} border rounded-3xl flex flex-col hover:shadow-lg hover:bg-slate-200 justify-left px-7 md:px-10 py-12 ${cardOpacity}`}
       onMouseLeave={onMouseLeave}
       onMouseOver={onMouseOver}
     >
