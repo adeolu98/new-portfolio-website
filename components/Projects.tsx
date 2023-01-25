@@ -73,7 +73,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
         >
           <Carousel.Slide>
             <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
-              <ProjectCard imageSrc="/project1.jpg">
+              <ProjectCard imageSrc="/projects/project1.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
                   <p className="text-xs xl:text-base">
@@ -81,27 +81,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
                   </p>
                 </>
               </ProjectCard>
-              <ProjectCard imageSrc="/project2.jpg">
-                <>
-                  <p className="text-sm xl:text-lg">Project Title</p>
-                  <p className="text-xs xl:text-base">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                  </p>
-                </>
-              </ProjectCard>
-            </div>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
-              <ProjectCard imageSrc="/project1.jpg">
-                <>
-                  <p className="text-sm xl:text-lg">Project Title</p>
-                  <p className="text-xs xl:text-base">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                  </p>
-                </>
-              </ProjectCard>
-              <ProjectCard imageSrc="/project2.jpg">
+              <ProjectCard imageSrc="/projects/project2.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
                   <p className="text-xs xl:text-base">
@@ -113,7 +93,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           </Carousel.Slide>
           <Carousel.Slide>
             <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
-              <ProjectCard imageSrc="/project1.jpg">
+              <ProjectCard imageSrc="/projects/project1.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
                   <p className="text-xs xl:text-base">
@@ -121,7 +101,27 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
                   </p>
                 </>
               </ProjectCard>
-              <ProjectCard imageSrc="/project2.jpg">
+              <ProjectCard imageSrc="/projects/project2.jpg">
+                <>
+                  <p className="text-sm xl:text-lg">Project Title</p>
+                  <p className="text-xs xl:text-base">
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                  </p>
+                </>
+              </ProjectCard>
+            </div>
+          </Carousel.Slide>
+          <Carousel.Slide>
+            <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
+              <ProjectCard imageSrc="/projects/project1.jpg">
+                <>
+                  <p className="text-sm xl:text-lg">Project Title</p>
+                  <p className="text-xs xl:text-base">
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                  </p>
+                </>
+              </ProjectCard>
+              <ProjectCard imageSrc="/projects/project2.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
                   <p className="text-xs xl:text-base">
@@ -151,7 +151,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           classNames={classes}
         >
           <Carousel.Slide>
-            <ProjectCard imageSrc="/project1.jpg" disableHover = {true}></ProjectCard>
+            <ProjectCard imageSrc="/projects/project1.jpg" disableHover = {true}></ProjectCard>
             <div className="text-center mt-6">
               <p className="text-lg">Project Title</p>
               <p className="text-sm">
@@ -160,7 +160,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <ProjectCard imageSrc="/project1.jpg" disableHover = {true}></ProjectCard>
+            <ProjectCard imageSrc="/projects/project1.jpg" disableHover = {true}></ProjectCard>
             <div className="text-center mt-6">
               <p className="text-lg">Project Title</p>
               <p className="text-sm">

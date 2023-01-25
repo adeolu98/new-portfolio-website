@@ -27,7 +27,7 @@ export const Intro: FunctionComponent<IntroProps> = ({
             <div className="w-full h-full rounded-full">
               <img
                 alt="image"
-                src="/deolu.jpg"
+                src="/deolu/deolu.jpg"
                 className="w-full object-cover h-full rounded-full"
               ></img>
             </div>

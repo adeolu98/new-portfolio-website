@@ -10,7 +10,7 @@ export const SkillCard: FunctionComponent<SkillCardProps> = ({
   children,
 }) => {
   return (
-    <div className={`${className} flex flex-col pt-6 py-8 px-8 items-center opacity-70 rounded-2xl hover:shadow-xl hover:opacity-100 hover:bg-slate-200 border`}>
+    <div className={`${className} flex flex-col py-8 px-8 justify-center items-center opacity-70 rounded-2xl hover:shadow-xl hover:opacity-100 hover:bg-slate-200 border`}>
       {children}
     </div>
   );
