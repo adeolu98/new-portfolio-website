@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from "react";
 
 import { Carousel } from "@mantine/carousel";
-import { createStyles } from "@mantine/core";
+import { createStyles, useMantineTheme } from "@mantine/core";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { ProjectCard } from "../components/Cards/ProjectCard";
+import { useMediaQuery } from "@mantine/hooks";
 
 const useStyles = createStyles((_theme, _params, getRef) => ({
   controls: {
@@ -52,11 +53,18 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
 }) => {
   const autoplay = useRef(Autoplay({ delay: 2500 }));
   const { classes } = useStyles();
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
 
   return (
     <div className={className}>
-      <div className="w-full h-full hidden md:block">
+      <div className="w-full h-full">
         <Carousel
+          slideSize="50%"
+          breakpoints={[{ maxWidth: "sm", slideSize: "100%", slideGap: 2 }]}
+          slideGap="xl"
+          align={'center'}
+          slidesToScroll={mobile ? 1 : 2}
           sx={{
             width: "100%",
             paddingLeft: "60px",
@@ -72,15 +80,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           classNames={classes}
         >
           <Carousel.Slide>
-            <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
-              <ProjectCard imageSrc="/projects/project1.jpg">
-                <>
-                  <p className="text-sm xl:text-lg">Project Title</p>
-                  <p className="text-xs xl:text-base">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                  </p>
-                </>
-              </ProjectCard>
+            <div className="mt-16 w-full">
               <ProjectCard imageSrc="/projects/project2.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
@@ -92,7 +92,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
+            <div className="mt-16 w-full">
               <ProjectCard imageSrc="/projects/project1.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
@@ -101,6 +101,10 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
                   </p>
                 </>
               </ProjectCard>
+            </div>
+          </Carousel.Slide>
+          <Carousel.Slide>
+            <div className="mt-16 w-full">
               <ProjectCard imageSrc="/projects/project2.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
@@ -109,63 +113,6 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
                   </p>
                 </>
               </ProjectCard>
-            </div>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <div className="lg:mt-16 flex flex-col w-full md:flex-row gap-8">
-              <ProjectCard imageSrc="/projects/project1.jpg">
-                <>
-                  <p className="text-sm xl:text-lg">Project Title</p>
-                  <p className="text-xs xl:text-base">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                  </p>
-                </>
-              </ProjectCard>
-              <ProjectCard imageSrc="/projects/project2.jpg">
-                <>
-                  <p className="text-sm xl:text-lg">Project Title</p>
-                  <p className="text-xs xl:text-base">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                  </p>
-                </>
-              </ProjectCard>
-            </div>
-          </Carousel.Slide>
-        </Carousel>
-      </div>
-      <div className="w-full h-full block md:hidden">
-        <Carousel
-          sx={{
-            width: "100%",
-            paddingLeft: "60px",
-            paddingRight: "60px",
-            paddingTop: "60px",
-            paddingBottom: "60px",
-          }}
-          mx="auto"
-          withIndicators
-          withControls = {false}
-          plugins={[autoplay.current]}
-          onMouseEnter={autoplay.current.stop}
-          onMouseLeave={autoplay.current.reset}
-          classNames={classes}
-        >
-          <Carousel.Slide>
-            <ProjectCard imageSrc="/projects/project1.jpg" disableHover = {true}></ProjectCard>
-            <div className="text-center mt-6">
-              <p className="text-lg">Project Title</p>
-              <p className="text-sm">
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              </p>
-            </div>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <ProjectCard imageSrc="/projects/project1.jpg" disableHover = {true}></ProjectCard>
-            <div className="text-center mt-6">
-              <p className="text-lg">Project Title</p>
-              <p className="text-sm">
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              </p>
             </div>
           </Carousel.Slide>
         </Carousel>
