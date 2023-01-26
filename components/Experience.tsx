@@ -102,7 +102,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
           classNames={classes}
         >
           <Carousel.Slide>
-            <div className="w-full p-3 md:p-10">
+            <div className="w-full px-3 md:px-10 py-10">
               <ExperienceCard
                 cardOpacity={cardOneOpacity}
                 onMouseLeave={() => handleOpacityCardTwo("reset")}
@@ -135,7 +135,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="w-full p-3 md:p-10">
+            <div className="w-full px-3 md:px-10 py-10">
               <ExperienceCard
                 cardOpacity={cardTwoOpacity}
                 onMouseLeave={() => handleOpacityCardOne("reset")}
@@ -168,7 +168,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="w-full p-3 md:p-10">
+            <div className="w-full px-3 md:px-10 py-10">
               <ExperienceCard
                 cardOpacity={cardOneOpacity}
                 onMouseLeave={() => handleOpacityCardTwo("reset")}
@@ -201,7 +201,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="w-full p-3 md:p-10">
+            <div className="w-full px-3 md:px-10 py-10">
               <ExperienceCard
                 cardOpacity={cardTwoOpacity}
                 onMouseLeave={() => handleOpacityCardOne("reset")}
