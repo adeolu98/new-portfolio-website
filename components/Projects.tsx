@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 
 import { Carousel } from "@mantine/carousel";
 import { createStyles, useMantineTheme } from "@mantine/core";
@@ -55,6 +55,13 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
   const { classes } = useStyles();
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
+  const [useControl, setUseControl] = useState(true);
+
+  useEffect(() => {
+    window.screen.width > theme.breakpoints.sm
+      ? setUseControl(true)
+      : setUseControl(false);
+  }, []);
 
   return (
     <div className={className}>
@@ -73,7 +80,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           }}
           mx="auto"
           withIndicators
-          withControls
+          withControls ={useControl}
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
