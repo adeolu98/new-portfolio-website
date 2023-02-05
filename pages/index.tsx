@@ -17,13 +17,14 @@ export default function Home() {
       <Nav className="-mt-60 mb-20 h-12"></Nav>
       <div
         id="experience"
-        className="lg:h-screen w-full px-8 lg:px-32 flex flex-col items-center"
+        className="lg:h-max w-full px-8 lg:px-32 flex flex-col items-center"
       >
         <p className="absolute text-4xl mt-20 lg:mt-24 text-center font-bold">
           Work Experience
         </p>
         <Experience className="mt-20 lg:mt-28 w-full h-full"></Experience>
       </div>
+
       <div
         id="skills"
         className="w-full px-8 lg:px-32 flex flex-col justify-center py-16"
@@ -31,10 +32,9 @@ export default function Home() {
         <p className="mt-12 text-4xl text-center  font-bold">Skills</p>
         <Skills className="mt-20"></Skills>
       </div>
-
       <div
         id="projects"
-        className="w-full gap-24 lg:gap-10 flex w-full flex-col py-20 justify-center px-8 lg:px-32 lg:py-32"
+        className="w-full gap-24 lg:gap-10 w-full  py-20 justify-center px-8 lg:px-32 lg:py-32"
       >
         <p className="text-center text-4xl font-bold">Projects</p>
         <Projects className="w-full h-full"></Projects>
