@@ -88,14 +88,14 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
         >
           <Carousel.Slide>
             <div className="mt-16 w-full">
-              <ProjectCard imageSrc="/projects/project2.jpg">
+            <ProjectCard imageSrc="/projects/project2.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
                   <p className="text-xs xl:text-base">
                     Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
                   </p>
                 </>
-              </ProjectCard>
+             </ProjectCard>
             </div>
           </Carousel.Slide>
           <Carousel.Slide>

@@ -19,7 +19,6 @@ const useStyles = createStyles((_theme, _params, getRef) => ({
       opacity: 0,
       cursor: "default",
     },
-
     scale: "1.5",
   },
 
@@ -60,7 +59,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
 
   useEffect(() => {
-    window.screen.width > theme.breakpoints.sm
+    window.screen.width >= theme.breakpoints.sm
       ? setUseControl(true)
       : setUseControl(false);
   }, []);
@@ -88,10 +87,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
           slidesToScroll={mobile ? 1 : 2}
           sx={{
             width: "100%",
-            paddingLeft: "15px",
-            paddingRight: "15px",
-            paddingTop: "40px",
-            paddingBottom: "40px",
+            padding: '40px'
           }}
           mx="auto"
           withIndicators
@@ -102,7 +98,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
           classNames={classes}
         >
           <Carousel.Slide>
-            <div className="w-full px-3 md:px-10 py-10">
+            <div className="w-full h-full px-3 md:px-10 py-10">
               <ExperienceCard
                 cardOpacity={cardOneOpacity}
                 onMouseLeave={() => handleOpacityCardTwo("reset")}
@@ -135,7 +131,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="w-full px-3 md:px-10 py-10">
+            <div className="w-full h-full px-3 md:px-10 py-10">
               <ExperienceCard
                 cardOpacity={cardTwoOpacity}
                 onMouseLeave={() => handleOpacityCardOne("reset")}
@@ -168,14 +164,13 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="w-full px-3 md:px-10 py-10">
+            <div className="w-full h-full  px-3 md:px-10 py-10">
               <ExperienceCard
                 cardOpacity={cardOneOpacity}
                 onMouseLeave={() => handleOpacityCardTwo("reset")}
                 onMouseOver={() => handleOpacityCardTwo("reduce")}
               >
                 <p className="text-lg lg:text-4xl font-bold">
-                  {" "}
                   Blockchain Developer
                 </p>
                 <p className="mt-2 text-base lg:text-2xl font-bold">
@@ -201,14 +196,13 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
-            <div className="w-full px-3 md:px-10 py-10">
+            <div className="w-full h-full px-3 md:px-10 py-10">
               <ExperienceCard
                 cardOpacity={cardTwoOpacity}
                 onMouseLeave={() => handleOpacityCardOne("reset")}
                 onMouseOver={() => handleOpacityCardOne("reduce")}
               >
                 <p className="text-lg lg:text-4xl font-bold">
-                  {" "}
                   Graduate Intern
                 </p>
                 <p className=" mt-2 text-base lg:text-2xl font-bold">
