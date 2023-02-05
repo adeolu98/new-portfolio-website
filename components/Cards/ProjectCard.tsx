@@ -29,7 +29,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
     >
       <img
         src={imageSrc}
-        className={`w-full h-full rounded-3xl ${ !disableHover && 'hover:opacity-30'}`}
+        className={`w-full h-full rounded-3xl ${ !disableHover && showProjectInfo === 'visible'  && 'opacity-30'}`}
         alt={"project"}
       ></img>
       <div
