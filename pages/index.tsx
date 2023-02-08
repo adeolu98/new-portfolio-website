@@ -22,7 +22,7 @@ export default function Home() {
         <p className="relative md:absolute text-4xl mt-20 lg:mt-24 text-center font-bold">
           Work Experience
         </p>
-        <Experience className="mt-10 sm:mt-28  w-full h-full"></Experience>
+        <Experience className="mt-6 sm:mt-28  w-full h-full"></Experience>
       </div>
 
       <div
