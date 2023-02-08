@@ -14,12 +14,12 @@ export default function Home() {
         <ContactLinks />
         <Intro className="h-screen"></Intro>
       </div>
-      <Nav className="-mt-60 mb-20 h-12"></Nav>
+      <Nav className="-mt-40 xs:-mt-54 sm:-mt-60"></Nav>
       <div
         id="experience"
-        className="lg:h-max w-full px-8 lg:px-32 flex flex-col items-center"
+        className="h-max w-full px-8 lg:px-32 mt-20 flex flex-col items-center"
       >
-        <p className="absolute text-4xl mt-20 lg:mt-24 text-center font-bold">
+        <p className="relative md:absolute text-4xl mt-20 lg:mt-24 text-center font-bold">
           Work Experience
         </p>
         <Experience className="mt-20 lg:mt-28 w-full h-full"></Experience>

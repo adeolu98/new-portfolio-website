@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { motion } from "framer-motion";
+import { Nav } from "./Nav";
 
 
 export interface IntroProps {
@@ -19,12 +20,12 @@ export const Intro: FunctionComponent<IntroProps> = ({
       }}
       initial={{ scale: 0.8 }}
       animate={{ scale: 1.3 }}
-      className="w-72 -mt-44 lg:-mt-60 h-72 absolute lg:relative lg:w-[900px] lg:h-[900px] p-5 lg:p-20 rounded-full border border-slate-300"
+      className="w-52 h-52 xs:w-72  -mt-44 lg:-mt-60 xs:h-72 absolute lg:relative lg:w-[900px] lg:h-[900px] p-3 xs:p-5 lg:p-20 rounded-full border border-slate-300"
     >
-      <div className="w-full h-full p-5 lg:p-20 rounded-full  border border-slate-300">
-        <div className="w-full h-full p-5 lg:p-20 rounded-full  border border-slate-300">
-          <div className="w-full h-full p-5 lg:p-32 rounded-full border border-slate-300">
-            <div className="w-full h-full rounded-full">
+      <div className="w-full h-full p-3 xs:p-5 lg:p-20 rounded-full  border border-slate-300">
+        <div className="w-full h-full p-3 xs:p-5 lg:p-20 rounded-full  border border-slate-300">
+          <div className="w-full h-full p-3 xs:p-5 lg:p-32 rounded-full border border-slate-300">
+            <div className="w-full h-full p-3 xs:p-5 rounded-full">
               <img
                 alt="image"
                 src="/deolu/deolu.jpg"

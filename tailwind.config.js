@@ -5,7 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '350px',
+        // => @media (min-width: 280px) { ... }
+      },
+    },
   },
   plugins: [],
 };
