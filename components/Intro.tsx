@@ -36,12 +36,10 @@ export const Intro: FunctionComponent<IntroProps> = ({
         </div>
       </div>
     </motion.div>
-    <div className="absolute flex flex-col gap-8 items-center mt-40 lg:mt-32">
-      <div className="text-center">
-        <p className="text-xl tracking-[.24em] ">SOFTWARE ENGINEER</p>
-        <p className="mt-2 font-black text-4xl">ADEOLU ADEWOLE</p>
+      <div className="absolute mt-16 sm:mt-40 lg:mt-32 text-center">
+        <p className="text-xl tracking-[.24em] border ">SOFTWARE ENGINEER</p>
+        <p className="mt-2 font-black text-lg xs:text-4xl">ADEOLU ADEWOLE</p>
       </div>
-    </div>
   </div>
   );
 };
