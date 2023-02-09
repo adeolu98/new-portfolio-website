@@ -9,7 +9,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
   return (
-    <div className="bg-slate-100 pt-10 lg:pt-10 w-screen min-h-screen">
+    <div className="bg-slate-100 pt-5 sm:pt-10 w-screen min-h-screen">
       <div className="px-8 md:pb-8 lg:pb-0 lg:px-32">
         <ContactLinks />
         <Intro className="h-screen"></Intro>
