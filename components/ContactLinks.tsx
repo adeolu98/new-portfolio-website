@@ -13,7 +13,7 @@ export const ContactLinks: FunctionComponent<ContactLinksProps> = ({
   className = "",
 }) => {
   return (
-    <div className={`${className} flex flex-row justify-between`}>
+    <div className={`${className} flex flex-col gap-6 xxs:flex-row justify-between`}>
       <div className="flex flex-row gap-4">
         <FontAwesomeIcon
           size="lg"
@@ -33,14 +33,14 @@ export const ContactLinks: FunctionComponent<ContactLinksProps> = ({
         ></FontAwesomeIcon>
       </div>
       <div
-        className="flex flex-row gap-4 items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+        className="flex flex-row gap-4 items-start xs:items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
         onClick={onClick}
       >
         <FontAwesomeIcon
           size="lg"
           icon={faEnvelope}
         ></FontAwesomeIcon>
-        <p className="">Send a mail</p>
+        <p className="text-xs xxs:text-base">Send a mail</p>
       </div>
     </div>
   );

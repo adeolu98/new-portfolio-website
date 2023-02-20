@@ -70,17 +70,26 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           slideSize="50%"
           breakpoints={[{ maxWidth: "sm", slideSize: "100%", slideGap: 2 }]}
           slideGap="xl"
-          align={'center'}
+          align={"center"}
           slidesToScroll={mobile ? 1 : 2}
-          sx={{
-            width: "100%",
-            paddingLeft: "60px",
-            paddingRight: "60px",
-            paddingBottom: "80px",
-          }}
+          sx={
+            mobile
+              ? {
+                  width: "100%",
+                  paddingLeft: "10px",
+                  paddingRight: "10px",
+                  paddingBottom: "80px",
+                }
+              : {
+                  width: "100%",
+                  paddingLeft: "60px",
+                  paddingRight: "60px",
+                  paddingBottom: "80px",
+                }
+          }
           mx="auto"
           withIndicators
-          withControls ={useControl}
+          withControls={useControl}
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
@@ -88,14 +97,14 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
         >
           <Carousel.Slide>
             <div className="mt-16 w-full">
-            <ProjectCard imageSrc="/projects/project2.jpg">
+              <ProjectCard imageSrc="/projects/project2.jpg">
                 <>
                   <p className="text-sm xl:text-lg">Project Title</p>
                   <p className="text-xs xl:text-base">
                     Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
                   </p>
                 </>
-             </ProjectCard>
+              </ProjectCard>
             </div>
           </Carousel.Slide>
           <Carousel.Slide>

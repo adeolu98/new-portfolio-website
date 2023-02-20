@@ -85,10 +85,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
           slideGap="xl"
           align={"center"}
           slidesToScroll={mobile ? 1 : 2}
-          sx={{
-            width: "100%",
-            padding: '40px'
-          }}
+          sx={mobile ? { width: "100%",padding: '10px 10px 30px'} :  { width: "100%", padding: '40px'}}
           mx="auto"
           withIndicators
           withControls = {useControl}

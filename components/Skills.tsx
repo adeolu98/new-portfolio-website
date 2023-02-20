@@ -16,7 +16,7 @@ export interface SkillsProps {
 
 export const Skills: FunctionComponent<SkillsProps> = ({ className = "" }) => {
   return (
-    <div className={`${className} grid gap-4 grid-cols-3  md:grid-cols-6 text-sm md:text-base lg:text-xl`}>
+    <div className={`${className} grid gap-4 grid-cols-1 xxs:grid-cols-2 xs:grid-cols-3  md:grid-cols-6 text-xs xs:text-sm md:text-base lg:text-xl`}>
       <SkillCard className="h-full lg:h-60">
         <img src={"/skills/tailwindcss.svg"} className="w-full h-full"></img>
         <p className="pt-4">Tailwind</p>
