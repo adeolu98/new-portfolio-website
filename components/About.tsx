@@ -14,7 +14,7 @@ export const About: FunctionComponent<AboutProps> = ({ className = "" }) => {
         src={"/deolu/deolu-2.jpg"}
       ></img>
       <div className=" lg:w-2/6 flex flex-col gap-4 justify-center lg:justify-left lg:gap-8 ">
-        <p className="text-4xl font-bold text-center lg:text-left">About </p>
+        <p className="xxs:text-4xl font-bold text-center lg:text-left">About </p>
         <p className="text-sm text-center md:px-16 lg:px-0 lg:text-left">
           Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
           ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum

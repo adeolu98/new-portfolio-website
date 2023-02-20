@@ -22,7 +22,7 @@ export const Nav: FunctionComponent<NavProps> = ({
   }, [top]);
 
   return (
-    <div className={`${className} ${changeBg && 'bg-slate-200'}  sticky z-[600] top-0 w-full flex flex-row lg:gap-8 text-xs md:text-base items-center justify-center h-12`}>
+    <div className={`${className} ${changeBg && 'bg-slate-200'}  xxs:sticky z-[600] top-0 w-full flex flex-col xxs:flex-row justify-center items-center lg:gap-8 text-xs md:text-base text-center py-1 xxs:h-12`}>
     <a
       href="#experience"
       className="px-1 xs:px-2 lg:px-6 rounded-3xl py-2 hover:bg-slate-200 hover:border-2 hover:border-black focus:border-2 focus:border-black"
