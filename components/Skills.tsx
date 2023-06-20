@@ -2,8 +2,6 @@ import React, { FunctionComponent } from "react";
 import { SkillCard } from "./Cards/SkillCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCss3,
-  faHtml5,
   faJs,
   faPython,
   faReact,
@@ -53,18 +51,9 @@ export const Skills: FunctionComponent<SkillsProps> = ({ className = "" }) => {
         <p className="pt-4">React.js</p>
       </SkillCard>
       <SkillCard className="h-full lg:h-60">
-        <FontAwesomeIcon
-          icon={faCss3}
-          className="w-full h-full"
-        ></FontAwesomeIcon>
-        <p className="pt-4">CSS</p>
-      </SkillCard>
-      <SkillCard className="h-full lg:h-60">
-        <FontAwesomeIcon
-          icon={faHtml5}
-          className="w-full h-4/5"
-        ></FontAwesomeIcon>
-        <p className="pt-4">HTML</p>
+      <img src={"/skills/foundry-banner.png"} className="object-cover w-full h-full"></img>
+      
+        <p className="pt-4">Foundry</p>
       </SkillCard>
       <SkillCard className="h-full lg:h-60">
         <FontAwesomeIcon
