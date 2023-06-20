@@ -4,12 +4,14 @@ export interface ProjectCardProps {
   imageSrc: string;
   className?: string;
   children?: ReactNode;
+  projectLink?: string;
   disableHover?: boolean;
 }
 
 export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
   className = "",
   imageSrc,
+  projectLink,
   children,
   disableHover = false,
 }) => {
@@ -23,6 +25,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
 
   return (
     <div>
+      <a href={projectLink} target="_blank" rel="noopener noreferrer">
       <div
         className={`${className} border hidden md:block rounded-3xl flex flex-col justify-left bg-black`}
         onMouseOver={() => handleDisplayProjectInfo("show")}
@@ -47,6 +50,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
         >
           <img
             src={imageSrc}
+            
             className={`w-full h-full rounded-3xl`}
             alt={"project"}
           ></img>
@@ -57,6 +61,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
           {children}
         </div>
       </div>
+      </a>
     </div>
   );
 };
