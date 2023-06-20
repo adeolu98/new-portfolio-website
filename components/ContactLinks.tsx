@@ -55,7 +55,7 @@ export const ContactLinks: FunctionComponent<ContactLinksProps> = ({
           className="flex flex-row gap-4 items-start xs:items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
           onClick={onClick}
         >
-          <FontAwesomeIcon size="lg" icon={faEnvelope}></FontAwesomeIcon>
+          <FontAwesomeIcon className="h-5"  icon={faEnvelope}></FontAwesomeIcon>
           <p className="text-xs xxs:text-base">Send a mail</p>
         </div>
       </a>
