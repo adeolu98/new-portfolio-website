@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import { SkillCard } from "./Cards/SkillCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faGit,
   faJs,
   faPython,
   faReact,
@@ -61,6 +62,13 @@ export const Skills: FunctionComponent<SkillsProps> = ({ className = "" }) => {
           className="w-full h-full"
         ></FontAwesomeIcon>
         <p className="pt-4">Javascript</p>
+      </SkillCard>
+      <SkillCard className="h-full lg:h-60">
+        <FontAwesomeIcon
+          icon={faGit}
+          className="w-full h-full"
+        ></FontAwesomeIcon>
+        <p className="pt-4">Git</p>
       </SkillCard>
       <SkillCard className="h-full lg:h-60">
         <FontAwesomeIcon
