@@ -98,7 +98,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           <Carousel.Slide>
             <div className="mt-16 w-full">
               <ProjectCard
-                imageSrc="/projects/project3.jpeg"
+                imageSrc="/projects/project1.jpeg"
                 projectLink="https://www.textmeanon.com/"
               >
                 <>
@@ -113,7 +113,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           <Carousel.Slide>
             <div className="mt-16 w-full">
               <ProjectCard
-                imageSrc="/projects/project4.jpeg"
+                imageSrc="/projects/project2.jpeg"
                 projectLink="https://github.com/adeolu98/deployer-tracker"
               >
                 <>
@@ -128,7 +128,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           <Carousel.Slide>
             <div className="mt-16 w-full">
               <ProjectCard
-                imageSrc="/projects/project5.jpeg"
+                imageSrc="/projects/project3.jpeg"
                 projectLink="https://github.com/adeolu98/ethernaut-game"
               >
                 <>
