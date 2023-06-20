@@ -97,11 +97,14 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
         >
           <Carousel.Slide>
             <div className="mt-16 w-full">
-              <ProjectCard imageSrc="/projects/project2.jpg">
+              <ProjectCard
+                imageSrc="/projects/project3.jpeg"
+                projectLink="https://www.textmeanon.com/"
+              >
                 <>
-                  <p className="text-sm xl:text-lg">Project Title</p>
+                  <p className="text-sm xl:text-lg">Text-Me Anon</p>
                   <p className="text-xs xl:text-base">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Messaging app for the EVM.
                   </p>
                 </>
               </ProjectCard>
@@ -109,11 +112,14 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           </Carousel.Slide>
           <Carousel.Slide>
             <div className="mt-16 w-full">
-              <ProjectCard imageSrc="/projects/project1.jpg">
+              <ProjectCard
+                imageSrc="/projects/project4.jpeg"
+                projectLink="https://github.com/adeolu98/deployer-tracker"
+              >
                 <>
-                  <p className="text-sm xl:text-lg">Project Title</p>
+                  <p className="text-sm xl:text-lg">Deploy Tracker</p>
                   <p className="text-xs xl:text-base">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Tracks new contract deployments for a target address.
                   </p>
                 </>
               </ProjectCard>
@@ -121,11 +127,14 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           </Carousel.Slide>
           <Carousel.Slide>
             <div className="mt-16 w-full">
-              <ProjectCard imageSrc="/projects/project2.jpg">
+              <ProjectCard
+                imageSrc="/projects/project5.jpeg"
+                projectLink="https://github.com/adeolu98/ethernaut-game"
+              >
                 <>
-                  <p className="text-sm xl:text-lg">Project Title</p>
+                  <p className="text-sm xl:text-lg">Ethernaut Game Solutions</p>
                   <p className="text-xs xl:text-base">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    My solutions to the ethernaut solidity trivia games
                   </p>
                 </>
               </ProjectCard>

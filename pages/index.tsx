@@ -42,7 +42,7 @@ export default function Home() {
       <div id="about">
         <About></About>
       </div>
-      <div className="py-3">
+      <div className=" text-xs py-3">
         <p className="text-center"> copyright &copy; 2022 ADEOLUADEWOLE</p>
       </div>
       <ScrollToTop

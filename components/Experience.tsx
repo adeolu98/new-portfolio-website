@@ -85,15 +85,51 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
           slideGap="xl"
           align={"center"}
           slidesToScroll={mobile ? 1 : 2}
-          sx={mobile ? { width: "100%",padding: '10px 10px 30px'} :  { width: "100%", padding: '40px'}}
+          sx={
+            mobile
+              ? { width: "100%", padding: "10px 10px 30px" }
+              : { width: "100%", padding: "40px" }
+          }
           mx="auto"
           withIndicators
-          withControls = {useControl}
+          withControls={useControl}
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
           classNames={classes}
         >
+          <Carousel.Slide>
+            <div className="w-full h-full px-3 md:px-10 py-10">
+              <ExperienceCard
+                cardOpacity={cardOneOpacity}
+                onMouseLeave={() => handleOpacityCardTwo("reset")}
+                onMouseOver={() => handleOpacityCardTwo("reduce")}
+              >
+                <p className="text-lg lg:text-4xl font-bold">
+                  Lead Project Developer
+                </p>
+                <p className=" text-base mt-2 lg:text-2xl font-bold">
+                  Text-Me Anon
+                </p>
+                <p className="mt-4 text-xs lg:text-sm">02/2023 - Present</p>
+                <ul className="list-disc text-xs lg:text-base mt-6">
+                  <li>Lead creative UI design and technical processes.</li>
+                  <li className="pt-2">
+                    Helped launch project from ground zero to a public V1.
+                  </li>
+                  <li className="pt-2">
+                    Developed and tested smart contracts that may be needed in
+                    features on the project.
+                  </li>
+                  <li className="pt-2">Debugging of issues faced by users.</li>
+                  <li className="pt-2">
+                    Reasearched several methods/new means to improve app UX via
+                    the UI features in the app.
+                  </li>
+                </ul>
+              </ExperienceCard>
+            </div>
+          </Carousel.Slide>
           <Carousel.Slide>
             <div className="w-full h-full px-3 md:px-10 py-10">
               <ExperienceCard
@@ -199,9 +235,7 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
                 onMouseLeave={() => handleOpacityCardOne("reset")}
                 onMouseOver={() => handleOpacityCardOne("reduce")}
               >
-                <p className="text-lg lg:text-4xl font-bold">
-                  Graduate Intern
-                </p>
+                <p className="text-lg lg:text-4xl font-bold">Graduate Intern</p>
                 <p className=" mt-2 text-base lg:text-2xl font-bold">
                   JEF TECH LIMITED
                 </p>
