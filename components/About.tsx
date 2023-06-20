@@ -15,11 +15,11 @@ export const About: FunctionComponent<AboutProps> = ({ className = "" }) => {
       ></img>
       <div className=" lg:w-2/6 flex flex-col gap-4 justify-center lg:justify-left lg:gap-8 ">
         <p className="xxs:text-4xl font-bold text-center lg:text-left">
-          About{" "}
+          About
         </p>
         <p className="text-sm text-center md:px-16 lg:px-0 lg:text-left">
           Adeolu is a skilled software engineer specializing in web3
-          technologies. With over 3 years of experience, they excel in developing
+          technologies. With over 3 years of experience, He excels in developing
           robust web applications using cutting-edge tools. Passionate about the
           decentralized web, Adeolu stays up-to-date with the latest trends
           to provide innovative solutions. For exceptional results in your web3

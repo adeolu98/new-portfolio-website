@@ -228,37 +228,6 @@ export const Experience: FunctionComponent<ExperienceProps> = ({
               </ExperienceCard>
             </div>
           </Carousel.Slide>
-          <Carousel.Slide>
-            <div className="w-full h-full px-3 md:px-10 py-10">
-              <ExperienceCard
-                cardOpacity={cardTwoOpacity}
-                onMouseLeave={() => handleOpacityCardOne("reset")}
-                onMouseOver={() => handleOpacityCardOne("reduce")}
-              >
-                <p className="text-lg lg:text-4xl font-bold">Graduate Intern</p>
-                <p className=" mt-2 text-base lg:text-2xl font-bold">
-                  JEF TECH LIMITED
-                </p>
-                <p className="mt-4 text-xs lg:text-sm">08/2019 - 05/2020</p>
-                <ul className="list-disc text-xs lg:text-base mt-6">
-                  <li>
-                    I and the inspection team delivered quality evaluation
-                    reports to clients in due time.
-                  </li>
-                  <li className="pt-2">
-                    Received feedback from various clients on jobs done and
-                    communicated them to necessary individuals promptly for
-                    review.
-                  </li>
-                  <li className="pt-2">
-                    Took part in the inspection of drill pipes, drill collars,
-                    subs and high-pressure hoses to determine if they are still
-                    fit for use on oil rigs.
-                  </li>
-                </ul>
-              </ExperienceCard>
-            </div>
-          </Carousel.Slide>
         </Carousel>
       </div>
     </div>
