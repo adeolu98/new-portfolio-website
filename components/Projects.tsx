@@ -114,6 +114,36 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
             <div className="mt-16 w-full">
               <ProjectCard
                 imageSrc="/projects/project2.jpeg"
+                projectLink="https://github.com/adeolu98/token-bridge-layerzero"
+              >
+                <>
+                  <p className="text-sm xl:text-lg">L1-L2 Token Bridge</p>
+                  <p className="text-xs xl:text-base">
+                    Cross-chain bridging of token asset from L1 to L2 and back. 
+                  </p>
+                </>
+              </ProjectCard>
+            </div>
+          </Carousel.Slide>
+          <Carousel.Slide>
+            <div className="mt-16 w-full">
+              <ProjectCard
+                imageSrc="/projects/project3.jpeg"
+                projectLink="https://github.com/adeolu98/governance-nft-contract"
+              >
+                <>
+                  <p className="text-sm xl:text-lg">Goverance contract for voting on-chain</p>
+                  <p className="text-xs xl:text-base">
+                  Implemetation of a goverance contract that gives holders of an NFT token governance rights.
+                  </p>
+                </>
+              </ProjectCard>
+            </div>
+          </Carousel.Slide>
+          <Carousel.Slide>
+            <div className="mt-16 w-full">
+              <ProjectCard
+                imageSrc="/projects/project4.jpeg"
                 projectLink="https://github.com/adeolu98/deployer-tracker"
               >
                 <>
@@ -128,7 +158,7 @@ export const Projects: FunctionComponent<ProjectsProps> = ({
           <Carousel.Slide>
             <div className="mt-16 w-full">
               <ProjectCard
-                imageSrc="/projects/project3.jpeg"
+                imageSrc="/projects/project5.jpeg"
                 projectLink="https://github.com/adeolu98/ethernaut-game"
               >
                 <>
